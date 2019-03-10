@@ -5,9 +5,16 @@
   "repository": "https://github.com/piann/inssagram",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "dotenv": "^6.2.0",
     "graphql-yoga": "^1.17.4"
   },
-  "scripts":{
-    "dev":"nodemon --exec babel-node src/server.js"
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
