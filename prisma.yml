@@ -1,4 +1,4 @@
-endpoint: https://us1.prisma.sh/inssagram/dev
+endpoint: https://us1.prisma.sh/shadow_hat-4ff7fb/inssagram/dev
 datamodel: datamodel.prisma
 
 generate:
