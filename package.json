@@ -1,0 +1,13 @@
+{
+  "name": "inssagram",
+  "version": "1.0.0",
+  "description": "insta clone with react, react-native, express, apollo, prisma, graphql blabla",
+  "repository": "https://github.com/piann/inssagram",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  },
+  "scripts":{
+    "dev":"nodemon --exec babel-node src/server.js"
+  }
+}
