@@ -5,6 +5,8 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 
 ## User Stories
 
+- [x] Create account
+- [] Log in
 - [] Like / Unlike a photo
 - [] Comment on a photo
 - [] Search by location
@@ -12,8 +14,6 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 - [] Follow / Unfollow user
 - [] See the full photo
 - [] Edit my profile
-- [] Create account
-- [] Log in
 - [] Upload a photo
 - [] Edit the photo (Delete)
 - [] See the feed
