@@ -11,6 +11,7 @@ type User {
   followers: [User!]! @relation(name: "FollowRelation")
   followings: [User!]! @relation(name: "FollowRelation")
   rooms:[Room!]!
+  loginSecret : String! @default(value:"")
 }
  
 type Post{

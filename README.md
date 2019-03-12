@@ -6,7 +6,8 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 ## User Stories
 
 - [x] Create account
-- [] Log in
+- [] Request Secret
+- [] Confirm Secret (Login)
 - [] Like / Unlike a photo
 - [] Comment on a photo
 - [] Search by location
