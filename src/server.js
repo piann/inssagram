@@ -6,8 +6,6 @@ import {sendSecretMail} from "./utils";
 
 const PORT = process.env.PORT;
 
-sendSecretMail("pokemail21@gmail.com","amazing WeR");
-
 const server = new GraphQLServer({schema});
 server.express.use(logger("dev"));
 
