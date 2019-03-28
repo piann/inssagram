@@ -12,7 +12,7 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 - [x] Comment on a photo
 - [x] Search user by name
 - [x] Search post by location or caption
-- [] Follow / Unfollow user
+- [x] Follow / Unfollow user
 - [] See user profile
 - [] See the full photo
 - [] Edit my profile
