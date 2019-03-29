@@ -58,3 +58,8 @@ type Message{
   from: User!  
   to: User! 
 }
+
+type UserProfile {
+  user:User!
+  posts:[Post!]!
+}
