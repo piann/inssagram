@@ -5,12 +5,13 @@ import schema from "./schema"
 import {sendSecretMail} from "./utils";
 import "./passport";
 import { authenticateJwt } from "./passport";
-
+import {isAuthenticated} from "./middleware";
 
 const PORT = process.env.PORT;
 
+// no more import isAuthenticated additionally! 
 const server = new GraphQLServer({schema, context:({request})=>({
-    request
+    request, isAuthenticated
 })
 
 });
