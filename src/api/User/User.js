@@ -1,3 +1,4 @@
+// This file is for computed field
 import { prisma } from "../../../generated/prisma-client";
 
 export default{
@@ -8,7 +9,7 @@ export default{
             try{
                 return prisma.$exists.user({
                     AND:[
-                        {id:user.id},{followings_some:{id:parent.id}}
+                        {id:user.id},{followings_some :{id:parent.id}}
                     ]
                 });
 
@@ -16,6 +17,7 @@ export default{
                 console.log(err)
                 return false
             }
-        }
+        },
+        isSelf: (parent, args, {request}) => (parent.id === request.user.id)
     }
 }
