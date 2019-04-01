@@ -1,0 +1,9 @@
+type PostInfo{
+    post:Post!
+    comments: [Comment!]
+    likeCount:Int!
+}
+
+type Query{
+    getPostInfo(id:String!): PostInfo!
+}

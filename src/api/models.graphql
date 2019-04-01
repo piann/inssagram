@@ -3,13 +3,15 @@ type User {
   userName: String! 
   email: String! 
   firstName: String 
-  lastName: String 
+  lastName: String
+  fullName: String 
   bio: String
   posts: [Post!]!
   likes: [Like!]!
   comments: [Comment!]!
   followers: [User!]! 
-  followings: [User!]! 
+  followings: [User!]!
+  isFollowing: Boolean! 
   rooms:[Room!]!
   loginSecret:String!
 }

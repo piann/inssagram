@@ -16,7 +16,7 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 - [x] Edit my profile
 - [x] See user profile
 - [x] See MY profile
-- [] See the full photo
+- [x] See the full post
 - [] Upload a photo
 - [] Edit the photo (Delete)
 - [] See the feed
