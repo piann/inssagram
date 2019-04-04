@@ -17,10 +17,10 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 - [x] See user profile
 - [x] See MY profile
 - [x] See the full post
-- [] Upload a photo
+- [x] Upload a photo
 - [] Edit the photo (Delete)
 - [] See the feed
 - [] See room list
 - [] See room
 - [] Send private Message
-= [] Receive Message (Realtime)
+- [] Receive Message (Realtime)
