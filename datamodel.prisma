@@ -5,12 +5,14 @@ type User {
   firstName: String @default(value:"")
   lastName: String @default(value:"")
   bio: String
-  posts: [Post!]!
-  likes: [Like!]!
-  comments: [Comment!]!
+  posts: [Post!]! @relation(name: "PostsOfUser", onDelete: CASCADE)
+  likes: [Like!]! @relation(name: "LikesOfUser", onDelete: CASCADE)
+  comments: [Comment!]! @relation(name: "CommentsOfUser", onDelete: CASCADE)
   followers: [User!]! @relation(name: "FollowRelation")
   followings: [User!]! @relation(name: "FollowRelation")
   rooms:[Room!]!
+  createdAt: DateTime!
+  updatedAt: DateTime! 
   loginSecret : String! @default(value:"")
 }
  
@@ -18,31 +20,39 @@ type Post{
   id: ID! @unique
   location: String
   caption: String!
-  user: User!
-  files: [File!]!
-  likes: [Like!]!
-  comments: [Comment!]!
+  user: User! @relation(name: "PostsOfUser")
+  files: [File!]! @relation(name:"FilesOfPost", onDelete:CASCADE)
+  likes: [Like!]! @relation(name:"LikesOfPost", onDelete:CASCADE)
+  comments: [Comment!]! @relation(name:"CommentsOfPost", onDelete:CASCADE)
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 }
 
 type Like{
   id: ID! @unique
-  user: User!
-  post: Post!
+  user: User! @relation(name: "LikesOfUser")
+  post: Post! @relation(name:"LikesOfPost")
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 
 }
 
 type Comment{
   id: ID! @unique
   text: String!
-  user: User!
-  post: Post!
+  user: User! @relation(name: "CommentsOfUser")
+  post: Post! @relation(name: "CommentsOfPost")
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 
 }
 
 type File {
   id: ID! @unique
   url: String!
-  post: Post!
+  post: Post! @relation(name:"FilesOfPost")
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 
 }
 
@@ -50,6 +60,8 @@ type Room {
   id: ID! @unique
   participants: [User!]!
   messages: [Message!]!
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 }
 
 type Message{
@@ -57,4 +69,6 @@ type Message{
   text: String! 
   from: User!  @relation(name:"From")
   to: User! @relation(name:"To")
+  createdAt: DateTime!
+  updatedAt: DateTime! 
 }
