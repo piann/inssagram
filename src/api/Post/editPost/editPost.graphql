@@ -1,0 +1,3 @@
+type Mutation{
+    editPost(id:String!, caption:String, location:String):Post
+}
