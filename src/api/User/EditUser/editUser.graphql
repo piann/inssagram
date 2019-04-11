@@ -1,5 +1,6 @@
 type Mutation{
-    editUser(userName: String 
+    editUser(userName: String
+    avatar:String 
     firstName: String 
     lastName: String 
     bio: String):User

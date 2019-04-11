@@ -7,10 +7,10 @@ export default{
 
             try{
 
-                const {userName, firstName, lastName, bio} = args;
+                const {userName, avatar, firstName, lastName, bio} = args;
                 const {user} = request;
                 return prisma.updateUser({
-                    where:{id:user.id}, data:{userName, firstName, lastName, bio}
+                    where:{id:user.id}, data:{userName, avatar, firstName, lastName, bio}
                 });
 
             } catch(err) {

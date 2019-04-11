@@ -19,8 +19,8 @@ insta clone with react, react-native, express, apollo, prisma, graphql blabla
 - [x] See the full post
 - [x] Upload a photo
 - [x] Edit the photo (Delete)
-- [] See the feed
-- [] See room list
+- [x] See the feed
+- [x] See room list
 - [] See room
 - [] Send private Message
 - [] Receive Message (Realtime)
