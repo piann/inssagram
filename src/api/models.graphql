@@ -16,6 +16,9 @@ type User {
   rooms:[Room!]!
   loginSecret:String!
   isSelf:Boolean!
+  postsCount:Int!
+  followingsCount:Int!
+  followersCount:Int!
   createdAt: String
   updatedAt: String 
 }
