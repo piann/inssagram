@@ -6,9 +6,9 @@ export default{
         getUser: (_,args,{request, isAuthenticated}) => {
             isAuthenticated(request);
             try{
-                const {id} = args;
+                const {userName} = args;
                 const {user} = request;
-                return prisma.user({id});
+                return prisma.user({userName});
             } catch(err) {
                 console.log(err);
                 return null
