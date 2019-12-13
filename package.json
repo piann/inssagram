@@ -17,7 +17,7 @@
     "morgan": "^1.9.1",
     "nodemailer": "^5.1.1",
     "nodemailer-sendgrid-transport": "^0.2.0",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "prisma": "1.27"
